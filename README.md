@@ -147,7 +147,10 @@ OS:	macOS
 4.	Manage alarms
 	
         •Select any alarm and click Edit, Delete, or Toggle Enable
-
+		
+5.  Use custom alarm file
+         
+		•Rename SOUND_FILE to **"alarm.wav"** instead of **None**
 
 📂 Project Structure
 
