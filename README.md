@@ -116,14 +116,14 @@ Through this process, I practiced:
 
 🧰 Technical Stack
 
-Component:	Technology
-Language:	Python 3.11
-GUI Library:	Tkinter + ttk
-Sound:	pygame + macOS fallback (afplay/say)
-Storage:	JSON
-Threading:	Python threading module
-IDE:	Visual Studio Code
-OS:	macOS
+    Component:	Technology
+    Language:	Python 3.11
+    GUI Library:	Tkinter + ttk
+    Sound:	pygame + macOS fallback (afplay/say)
+    Storage:	JSON
+    Threading:	Python threading module
+    IDE:	Visual Studio Code
+    OS:	macOS
 
 
 
