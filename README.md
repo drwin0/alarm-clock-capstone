@@ -155,15 +155,12 @@ OS:	macOS
 📂 Project Structure
 
 
-
-alarm-clock
-
-/
-│
-├── gui_alarm_clock.py   # Main program file
-├── alarms.json          # Auto-saved alarm data
-├── README.md            # Project documentation
-└── alarm.wav (optional) # Custom alarm sound
+    alarm-clock/
+    │
+    ├── gui_alarm_clock.py   # Main program file
+    ├── alarms.json          # Auto-saved alarm data
+    ├── README.md            # Project documentation
+    └── alarm.wav (optional) # Custom alarm sound
 
 
 
