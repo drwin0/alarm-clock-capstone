@@ -137,12 +137,15 @@ python3 gui_alarm_clock.py
 
 
 	3.	Add alarms
-	•	Enter a time (HH:MM)
-	•	Add a label (optional)
-	•	Check “Repeat daily” if needed
-	•	Click Add Alarm
-	4.	Manage alarms
-	•	Select any alarm and click Edit, Delete, or Toggle Enable
+
+•Enter a time (HH:MM)
+•Add a label (optional)
+•Check “Repeat daily” if needed
+•Click Add Alarm
+
+    4.	Manage alarms
+	
+•Select any alarm and click Edit, Delete, or Toggle Enable
 
 
 📂 Project Structure
