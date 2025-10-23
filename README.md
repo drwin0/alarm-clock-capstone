@@ -157,7 +157,7 @@ Through this process, I practiced:
 		
 5.  Use custom alarm sound
          
-		•Rename SOUND_FILE to **"alarm.wav"** instead of **None**
+		•Set SOUND_FILE path to **"alarm.wav"** instead of **None**
 
 📂 Project Structure
 
