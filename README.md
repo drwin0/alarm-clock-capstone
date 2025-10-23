@@ -167,9 +167,3 @@ alarm-clock/
 	•	Custom sound selection 
     •	Work on the responsive side of the app
 
-
-
-💬 Reflections
-
-Excellent — since I now know your background before starting Python (graphic design, web development, HTML/CSS/JS, PHP, and UI design) ￼, here’s a much deeper and more personal Reflection section for your README.
-It connects your previous skills to how you successfully built your Alarm Clock app, and how that experience shaped your growth as a developer.
