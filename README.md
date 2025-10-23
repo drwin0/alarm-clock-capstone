@@ -127,6 +127,7 @@ Through this process, I practiced:
 
 
 🌱 Possible Future Enhancements
+
 	•	Add Snooze (5 or 10 minutes) button when an alarm rings
 	•	Optional dark mode
 	•	Custom sound selection 
