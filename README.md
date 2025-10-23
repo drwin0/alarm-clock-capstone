@@ -41,15 +41,18 @@ From my project proposal, my initial objectives were:
 	1.	Build a basic Alarm Clock program that allows the user to:
 	•	Set a specific time for an alarm
 	•	Trigger a simple alert or sound when that time arrives
+	
 	2.	Practice key Python concepts:
 	•	Loops and conditionals
 	•	Time-based functions (time module)
 	•	User input and output
 	•	Simple functions and modular design
+	
 	3.	Use only beginner-friendly tools:
 	•	IDE: Visual Studio Code
 	•	OS: macOS
 	•	No external frameworks except possibly winsound or pygame for sound
+	
 	4.	Add a hand-drawn flowchart showing how the program waits for the right time and plays a sound.
 
 
