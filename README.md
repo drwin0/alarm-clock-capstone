@@ -31,12 +31,13 @@ From my project proposal, my initial objectives were:
 During development, the project evolved into a complete GUI application with several features that go far beyond the initial concept.
 
 The final version is:
-	•	🖥 Graphical (GUI) — built with Tkinter
-	•	🎵 Cross-platform — works perfectly on macOS
-	•	⏰ Multi-alarm capable — you can add, edit, delete, and toggle multiple alarms
-	•	💾 Persistent — alarms are saved automatically in alarms.json
-	•	💡 Responsive — the layout resizes dynamically with the window
-	•	🔔 Customizable — supports custom sound files via pygame or macOS system sounds
+
+•	🖥 Graphical (GUI) — built with Tkinter
+•	🎵 Cross-platform — works perfectly on macOS
+•	⏰ Multi-alarm capable — you can add, edit, delete, and toggle multiple alarms
+•	💾 Persistent — alarms are saved automatically in alarms.json
+•	💡 Responsive — the layout resizes dynamically with the window
+•	🔔 Customizable — supports custom sound files via pygame or macOS system sounds
 
 
 
