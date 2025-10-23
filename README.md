@@ -16,6 +16,7 @@ When I began learning Python, I immediately noticed how its clean syntax and str
 Concepts like functions, loops, and modular organization felt familiar, but Python allowed me to apply them in new contexts, outside the browser, like file systems, automation, and desktop apps.
 
 Building this Alarm Clock project was a perfect bridge between those worlds.
+
 My design background helped me:
 
 	•	Think carefully about user flow and layout when creating the Tkinter GUI.
