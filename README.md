@@ -17,25 +17,28 @@ Concepts like functions, loops, and modular organization felt familiar, but Pyth
 
 Building this Alarm Clock project was a perfect bridge between those worlds.
 My design background helped me:
+
 	•	Think carefully about user flow and layout when creating the Tkinter GUI.
 	•	Choose colors, spacing, and fonts that made the interface clean and readable.
 	•	Focus on responsiveness and balance, just like in web design.
 
 My web development mindset also influenced how I structured the code:
+
 	•	I treated each alarm like a small “data component,” similar to how I would manage UI elements in React or NextJS.
 	•	I applied front-end thinking to create reusable elements — buttons, labels, and inputs with consistent styles.
 	•	I prioritized interactivity and visual feedback (pop-up messages, status labels, color indicators).
 
 At the same time, Python introduced me to entirely new programming ideas:
+
 	•	Threading: running the alarm-checker in the background without freezing the interface.
 	•	JSON persistence: saving and loading alarms like mini database records.
 
 Those skills expanded my sense of what I can build, not just websites, but full desktop applications that combine logic, design, and interactivity.
 
-This project represents more than just an alarm clock — it’s where my web development, design sense, and new Python skills merged into one creative and technical product.
+This project represents more than just an alarm clock, it’s where my web development, design sense, and new Python skills merged into one creative and technical product.
 It gave me confidence that I can use Python not just for scripting or data analysis, but also for building functional tools with user-friendly interfaces, something I plan to keep improving in my next projects.
 
-🎯 Original Goals (from the Proposal)
+🎯 Original Goals
 
 From my project proposal, my initial objectives were:
 
