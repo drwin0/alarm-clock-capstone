@@ -3,17 +3,17 @@
 📘 Overview
 
 This project began as a simple Alarm Clock concept proposed for my NCLab Python Capstone.
-The original goal was to build a basic time-based alarm program that could play a sound at a set time — something minimal, easy to code, and functional for beginners.
+The original goal was to build a basic time-based alarm program that could play a sound at a set time, something minimal, easy to code, and functional for beginners.
 
 I decided to enhance the idea and turn it into a full-featured, responsive desktop alarm clock app that feels like a real, usable tool.
 
 💭 Reflection
 
 Before learning Python, my background was primarily in web development and graphic design.
-I was comfortable working with HTML, CSS, and JavaScript, creating structured websites with an emphasis on user experience, layout design, and clean visual presentation ￼. My training in computer science also helped me develop logical thinking and an understanding of how different systems communicate — but I hadn’t yet worked much with backend logic, data handling, or automation.
+I was comfortable working with HTML, CSS, and JavaScript, creating structured websites with an emphasis on user experience, layout design, and clean visual presentation ￼. My training in computer science also helped me develop logical thinking and an understanding of how different systems communicate, but I hadn’t yet worked much with backend logic, data handling, or automation.
 
 When I began learning Python, I immediately noticed how its clean syntax and structured logic connected naturally with what I already knew from web programming.
-Concepts like functions, loops, and modular organization felt familiar, but Python allowed me to apply them in new contexts — outside the browser — like file systems, automation, and desktop apps.
+Concepts like functions, loops, and modular organization felt familiar, but Python allowed me to apply them in new contexts, outside the browser, like file systems, automation, and desktop apps.
 
 Building this Alarm Clock project was a perfect bridge between those worlds.
 My design background helped me:
@@ -30,7 +30,7 @@ At the same time, Python introduced me to entirely new programming ideas:
 	•	Threading: running the alarm-checker in the background without freezing the interface.
 	•	JSON persistence: saving and loading alarms like mini database records.
 
-Those skills expanded my sense of what I can build — not just websites, but full desktop applications that combine logic, design, and interactivity.
+Those skills expanded my sense of what I can build, not just websites, but full desktop applications that combine logic, design, and interactivity.
 
 This project represents more than just an alarm clock — it’s where my web development, design sense, and new Python skills merged into one creative and technical product.
 It gave me confidence that I can use Python not just for scripting or data analysis, but also for building functional tools with user-friendly interfaces, something I plan to keep improving in my next projects.

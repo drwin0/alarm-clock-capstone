@@ -130,7 +130,7 @@ class AlarmClock:
                 for a in data:
                     if isinstance(a, dict) and "time" in a and is_valid_hhmm(a["time"]):
                         out.append({
-                            "time": a.get("time", "07:30"),
+                            "time": a.get("time", "00:00"),
                             "label": a.get("label", "Alarm"),
                             "repeat": a.get("repeat", "none"),
                             "enabled": bool(a.get("enabled", True)),
@@ -161,7 +161,7 @@ class AlarmClock:
 
         tk.Label(add_frame, text="Time (HH:MM):").grid(row=0, column=0, sticky="w", padx=(0, 8))
         self.time_entry = tk.Entry(add_frame, width=8, justify="center")
-        self.time_entry.insert(0, "07:30")
+        self.time_entry.insert(0, "00:00")
         self.time_entry.grid(row=0, column=1, sticky="w")
 
         tk.Label(add_frame, text="Label:").grid(row=0, column=2, sticky="w", padx=(12, 8))
@@ -327,7 +327,6 @@ class AlarmClock:
         # UI message
         messagebox.showinfo("⏰ ALARM!", f"{a.get('label','Alarm')} — it's {a.get('time')}")
 
-        # Post-ring behavior
         if a.get("repeat") == "none":
             a["enabled"] = False  # one-time: disable
         # if daily: keep enabled for tomorrow
