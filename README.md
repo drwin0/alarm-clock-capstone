@@ -126,26 +126,27 @@ OS:	macOS
 
 🖥 How to Run
 
+
 1.	Install dependencies
 
-    pip install pygame
+        pip install pygame
 
 
 2.	Run the program
 
-    python3 gui_alarm_clock.py
+        python3 gui_alarm_clock.py
 
 
 3.	Add alarms
 
-    •Enter a time (HH:MM)
-    •Add a label (optional)
-    •Check “Repeat daily” if needed
-    •Click Add Alarm
+        •Enter a time (HH:MM)
+        •Add a label (optional)
+        •Check “Repeat daily” if needed
+        •Click Add Alarm
 
 4.	Manage alarms
 	
-    •Select any alarm and click Edit, Delete, or Toggle Enable
+        •Select any alarm and click Edit, Delete, or Toggle Enable
 
 
 📂 Project Structure
