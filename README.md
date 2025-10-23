@@ -88,6 +88,7 @@ This makes the app feel more “real,” because users don’t lose data after c
 🎵 Cross-Platform Sound System
 
 Originally I planned to use winsound, but since I developed on macOS, I switched to a dual system:
+
 	•	pygame for custom .wav and .mp3 files
 	•	macOS fallback: system sounds via afplay, or text-to-speech via say
 
@@ -97,6 +98,7 @@ The alarm-checking loop now runs in a background thread, allowing the GUI to sta
 Each alarm is tracked individually and can repeat daily if selected.
 
 🧱 UI Components
+
 	•	Treeview table for displaying alarms
 	•	Edit, Delete, and Toggle buttons for control
 	•	Status label for instant feedback
@@ -105,6 +107,7 @@ Each alarm is tracked individually and can repeat daily if selected.
 🧠 Learning Focus
 
 Through this process, I practiced:
+
 	•	Event-driven programming
 	•	Thread management in GUI apps
 	•	File handling and JSON serialization
