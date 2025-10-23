@@ -148,14 +148,17 @@ OS:	macOS
 	
         •Select any alarm and click Edit, Delete, or Toggle Enable
 		
-5.  Use custom alarm file
+5.  Use custom alarm sound
          
 		•Rename SOUND_FILE to **"alarm.wav"** instead of **None**
 
 📂 Project Structure
 
 
-alarm-clock/
+
+alarm-clock
+
+/
 │
 ├── gui_alarm_clock.py   # Main program file
 ├── alarms.json          # Auto-saved alarm data
@@ -165,6 +168,8 @@ alarm-clock/
 
 
 🌱 Possible Future Enhancements
+
+
 	•	Add Snooze (5 or 10 minutes) button when an alarm rings
 	•	Optional dark mode
 	•	Custom sound selection 
