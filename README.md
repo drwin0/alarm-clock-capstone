@@ -1,4 +1,4 @@
-🕒 Capstone Project — Alarm Clock (Final Version)
+🕒 Capstone Project — Alarm Clock
 
 📘 Overview
 
