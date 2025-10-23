@@ -38,6 +38,7 @@ It gave me confidence that I can use Python not just for scripting or data analy
 🎯 Original Goals (from the Proposal)
 
 From my project proposal, my initial objectives were:
+
 	1.	Build a basic Alarm Clock program that allows the user to:
 	•	Set a specific time for an alarm
 	•	Trigger a simple alert or sound when that time arrives
