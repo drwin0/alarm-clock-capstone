@@ -74,6 +74,7 @@ The final version is:
 
 🧩 Design Choices and Improvements
 
+
 🪟 Responsive Layout
 
 Instead of stacking all widgets vertically, I redesigned the layout using Tkinter’s grid system.
