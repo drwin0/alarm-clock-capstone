@@ -8,7 +8,6 @@ The original goal was to build a basic time-based alarm program that could play 
 I decided to enhance the idea and turn it into a full-featured, responsive desktop alarm clock app that feels like a real, usable tool.
 
 🎯 Original Goals
-
 From my project proposal, my initial objectives were:
 	1.	Build a basic Alarm Clock program that allows the user to:
 	•	Set a specific time for an alarm
