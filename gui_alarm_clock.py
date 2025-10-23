@@ -79,6 +79,7 @@ def play_alert(sound_file: str | None = None, duration_seconds: int = 3):
 
 
 def is_valid_hhmm(s: str) -> bool:
+    """Return True if s is a valid 24-hour 'HH:MM' time string."""
     try:
         time.strptime(s, "%H:%M")
         return True
@@ -161,7 +162,7 @@ class AlarmClock:
 
         tk.Label(add_frame, text="Time (HH:MM):").grid(row=0, column=0, sticky="w", padx=(0, 8))
         self.time_entry = tk.Entry(add_frame, width=8, justify="center")
-        self.time_entry.insert(0, "00:00")
+        self.time_entry.insert(0, "07:30")
         self.time_entry.grid(row=0, column=1, sticky="w")
 
         tk.Label(add_frame, text="Label:").grid(row=0, column=2, sticky="w", padx=(12, 8))
@@ -295,6 +296,7 @@ class AlarmClock:
 
     # ---------- Alarm checking ----------
     def _check_loop(self):
+        """Background worker: checks every second and schedules UI triggers."""
         while not self._stop_event.is_set():
             now_hm = time.strftime("%Y%m%d-%H:%M")  # include date to avoid re-ringing next day
             hm_only = now_hm.split("-")[1]
