@@ -43,8 +43,6 @@ During development, the project evolved into a complete **Graphical User Interfa
 - **Multi-alarm capable:** Add, edit, delete, and toggle multiple alarms  
 - **Persistent:** Alarms are automatically saved in `alarms.json`  
 - **Responsive:** Layout dynamically adjusts to window resizing  
-- **Dark Mode Support** (optional) 
-- **Pop-up Alerts:** User-friendly reminders 
 - **Customizable:** Supports custom sound files via `pygame` or macOS system sounds  
 
 ---
@@ -78,8 +76,6 @@ Each alarm is managed individually and can repeat daily if desired.
 - Edit, Delete, and Toggle buttons for control  
 - Status label for instant feedback  
 - Pop-up notifications when alarms ring  
-- Turn ON/OFF dark mode 
-
 
 ---
 
@@ -150,50 +146,9 @@ alarm-clock/
 ## 🌱 Possible Future Enhancements
 
 - Add a **Snooze** button (5 or 10 minutes) when an alarm rings  
+- Implement **dark mode**  
 - Allow **custom sound selection** from the file system  
 - Improve **UI responsiveness and animations**  
 
 ---
 
-## 💭 Reflection
-
-Before learning Python, my background was primarily in **web development** and **graphic design**.  
-I was comfortable working with **HTML**, **CSS**, and **JavaScript**, creating structured websites with an emphasis on user experience, layout design, and clean visual presentation.  
-My training in computer science also helped me develop **logical thinking** and an understanding of how different systems communicate — but I hadn’t yet worked much with backend logic, data handling, or automation.
-
-When I began learning **Python**, I immediately noticed how its **clean syntax** and **structured logic** connected naturally with what I already knew from web programming.  
-Concepts like *functions*, *loops*, and *modular organization* felt familiar, but Python allowed me to apply them in new contexts — outside the browser — such as file systems, automation, and desktop applications.
-
-Building this **Alarm Clock** project became the perfect bridge between those worlds.
-
----
-
-### 🎨 How My Design Background Helped
-
-- Thought carefully about **user flow** and layout when creating the Tkinter GUI.  
-- Chose **colors**, **spacing**, and **fonts** that made the interface clean and readable.  
-- Focused on **responsiveness** and **visual balance**, just as in web design.  
-
----
-
-### 💻 Applying Web Development Thinking to Python
-
-- Treated each alarm like a small “**data component**,” similar to managing UI elements in React or Next.js.  
-- Applied **front-end design principles** to create reusable elements — buttons, labels, and input fields with consistent styles.  
-- Prioritized **interactivity** and **visual feedback** through pop-up messages, status labels, and color indicators.  
-
----
-
-### 🧠 What Python Taught Me
-
-- **Threading:** Running the alarm checker in the background without freezing the interface.  
-- **JSON Persistence:** Saving and loading alarms like mini database records.  
-
-These new concepts expanded my understanding of what I can build — not just websites, but complete **desktop applications** that combine logic, design, and interactivity.  
-
----
-
-### 🚀 Final Thoughts
-
-This project represents more than just an alarm clock — it’s where my **web development**, **design sense**, and **new Python skills** merged into one cohesive product.  
-It gave me confidence that Python can be used not only for scripting or data analysis but also for building **functional, user-friendly tools** with polished interfaces — something I’m excited to keep improving in future projects.
