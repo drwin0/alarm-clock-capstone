@@ -26,59 +26,42 @@ From my project proposal, my initial objectives were:
 4.	Add a hand-drawn flowchart showing how the program waits for the right time and plays a sound.
 
 
-🚀 What I Actually Built
+## 🚀 What I Built
 
-During development, the project evolved into a complete GUI application with several features that go far beyond the initial concept.
+The final app evolved far beyond the original idea.
 
-The final version is:
-
-•	🖥 Graphical (GUI) — built with Tkinter
-•	🎵 Cross-platform — works perfectly on macOS
-•	⏰ Multi-alarm capable — you can add, edit, delete, and toggle multiple alarms
-•	💾 Persistent — alarms are saved automatically in alarms.json
-•	💡 Responsive — the layout resizes dynamically with the window
-•	🔔 Customizable — supports custom sound files via pygame or macOS system sounds
-
-
-
-🧩 Design Choices and Improvements
+### Final Features
+- 🖥 **GUI:** Built with Tkinter  
+- 🎵 **Sound:** Cross-platform alert system  
+- ⏰ **Multi-alarm:** Add, edit, delete, and toggle multiple alarms  
+- 💾 **Persistent Storage:** Alarms saved to `alarms.json`  
+- 💡 **Responsive Layout:** Window dynamically resizes  
+- 🌙 **Dark Mode Support** (optional)  
+- 🔔 **Pop-up Alerts:** User-friendly reminders  
+- 🧵 **Background Thread:** Prevents interface freezing  
 
 
-🪟 Responsive Layout
+## 🧩 Design Choices and Improvements
 
-Instead of stacking all widgets vertically, I redesigned the layout using Tkinter’s grid system.
-Now each component (header, input form, alarm list, footer) expands fluidly when resizing the window.
+### 🪟 Responsive Layout
+The GUI uses Tkinter’s grid system for scalable design, ensuring that all elements resize proportionally.
 
-💾 Persistent Storage
+### 💾 Persistent Storage
+All alarms are automatically saved and loaded via a simple JSON file (`alarms.json`).
 
-I added a simple alarms.json file that automatically saves and loads alarms.
-This makes the app feel more “real,” because users don’t lose data after closing it.
+### 🎵 Cross-Platform Audio
+Since `winsound` doesn’t work on macOS, I implemented:
+- `pygame` for custom `.wav`/`.mp3` sounds  
+- macOS system fallback (`afplay` or `say`)
 
-🎵 Cross-Platform Sound System
+### 🧠 Improved Alarm Logic
+A background thread continuously checks current time without blocking the main window — allowing the UI to stay responsive.
 
-Originally I planned to use winsound, but since I developed on macOS, I switched to a dual system:
-	•	pygame for custom .wav and .mp3 files
-	•	macOS fallback: system sounds via afplay, or text-to-speech via say
-
-🧠 Smarter Alarm Logic
-
-The alarm-checking loop now runs in a background thread, allowing the GUI to stay responsive while waiting for alarms.
-Each alarm is tracked individually and can repeat daily if selected.
-
-🧱 UI Components
-	•	Treeview table for displaying alarms
-	•	Edit, Delete, and Toggle buttons for control
-	•	Status label for instant feedback
-	•	Pop-up notifications when alarms ring
-
-🧠 Learning Focus
-
-Through this process, I practiced:
-	•	Event-driven programming
-	•	Thread management in GUI apps
-	•	File handling and JSON serialization
-	•	Responsive layout design
-
+### 🧱 Enhanced UI Components
+- **Treeview** list for displaying alarms  
+- **Buttons** to edit, delete, toggle  
+- **Pop-up messages** for instant feedback  
+- **Status label** showing program activity  
 
 🧰 Technical Stack
     Component:	Technology
