@@ -1,125 +1,309 @@
-Capstone Project — Alarm Clock
+# Capstone Project — Alarm Clock
 
-Overview
+## 📘 Overview
 
-This project began as a simple Alarm Clock concept proposed for my NCLab Python Capstone.
+This project began as a simple **Alarm Clock** concept proposed for my **NCLab Python Capstone**.  
 The original goal was to build a basic time-based alarm program that could play a sound at a set time — something minimal, easy to code, and functional for beginners.
 
-I decided to enhance the idea and turn it into a full-featured, responsive desktop alarm clock app that feels like a real, usable tool.
+Over time, I enhanced the idea and turned it into a **full-featured, responsive desktop alarm clock application** that feels like a real, usable tool.
 
-Original Goals
+---
+
+## 🎯 Original Goals
 
 From my project proposal, my initial objectives were:
-	1.	Build a basic Alarm Clock program that allows the user to:
-	•	Set a specific time for an alarm
-	•	Trigger a simple alert or sound when that time arrives
-	2.	Practice key Python concepts:
-	•	Loops and conditionals
-	•	Time-based functions (time module)
-	•	User input and output
-	•	Simple functions and modular design
-	3.	Use only beginner-friendly tools:
-	•	IDE: Visual Studio Code
-	•	OS: macOS
-	•	No external frameworks except possibly winsound or pygame for sound
-	4.	Add a hand-drawn flowchart showing how the program waits for the right time and plays a sound.
 
-What I Actually Built
+1. **Build a basic Alarm Clock program** that allows the user to:
+   - Set a specific time for an alarm  
+   - Trigger a simple alert or sound when that time arrives  
 
-During development, the project evolved into a complete GUI application with several features that go far beyond the initial concept.
+2. **Practice key Python concepts:**
+   - Loops and conditionals  
+   - Time-based functions (`time` module)  
+   - User input and output  
+   - Simple functions and modular design  
 
-The final version is:
-	•	Graphical (GUI) — built with Tkinter
-	•	Cross-platform — works perfectly on macOS
-	•	Multi-alarm capable — you can add, edit, delete, and toggle multiple alarms
-	•	Persistent — alarms are saved automatically in alarms.json
-	•	Responsive — the layout resizes dynamically with the window
-	•	Customizable — supports custom sound files via pygame or macOS system sounds
+3. **Use beginner-friendly tools only:**
+   - **IDE:** Visual Studio Code  
+   - **OS:** macOS  
+   - **No external frameworks** except possibly `winsound` or `pygame` for sound  
 
-Design Choices and Improvements
+4. **Add a flowchart** showing how the program waits for the right time and plays a sound.
 
-Responsive Layout
+---
 
-Instead of stacking all widgets vertically, I redesigned the layout using Tkinter’s grid system.
-Now each component (header, input form, alarm list, footer) expands fluidly when resizing the window.
+## 🚀 What I Actually Built
 
-Persistent Storage
+During development, the project evolved into a complete **Graphical User Interface (GUI)** application with multiple features that go far beyond the initial concept.
 
-I added a simple alarms.json file that automatically saves and loads alarms.
-This makes the app feel more “real,” because users don’t lose data after closing it.
+### Final Version Highlights
 
-Cross-Platform Sound System
+- **Graphical (GUI):** Built with Tkinter  
+- **Cross-platform:** Fully functional on macOS  
+- **Multi-alarm capable:** Add, edit, delete, and toggle multiple alarms  
+- **Persistent:** Alarms are automatically saved in `alarms.json`  
+- **Responsive:** Layout dynamically adjusts to window resizing  
+- **Customizable:** Supports custom sound files via `pygame` or macOS system sounds  
 
-Originally I planned to use winsound, but since I developed on macOS, I switched to a dual system:
-	•	pygame for custom .wav and .mp3 files
-	•	macOS fallback: system sounds via afplay, or text-to-speech via say
+---
 
-Smarter Alarm Logic
+## 🧩 Design Choices and Improvements
 
-The alarm-checking loop now runs in a background thread, allowing the GUI to stay responsive while waiting for alarms.
-Each alarm is tracked individually and can repeat daily if selected.
+### Responsive Layout
 
-UI Components
-	•	Treeview table for displaying alarms
-	•	Edit, Delete, and Toggle buttons for control
-	•	Status label for instant feedback
-	•	Pop-up notifications when alarms ring
+Rather than stacking all widgets vertically, I redesigned the interface using **Tkinter’s grid system**.  
+Each component (header, input form, alarm list, footer) expands fluidly when the window is resized.
 
-Learning Focus
+### Persistent Storage
 
-Through this process, I practiced:
-	•	Event-driven programming
-	•	Thread management in GUI apps
-	•	File handling and JSON serialization
-	•	Responsive layout design
+I added a simple `alarms.json` file that automatically saves and loads alarm data.  
+This persistence ensures users don’t lose their alarms after closing the app.
 
-Technical Stack
+### Cross-Platform Sound System
 
-Component	Technology
-Language	Python 3.11
-GUI Library	Tkinter + ttk
-Sound	pygame + macOS fallback (afplay/say)
-Storage	JSON
-Threading	Python threading module
-IDE	Visual Studio Code
-OS	macOS
+Originally, I planned to use `winsound`, but since I developed on macOS, I implemented a **dual sound system**:
+- `pygame` for custom `.wav` and `.mp3` files  
+- macOS fallback using system sounds via `afplay` or text-to-speech via `say`
 
-How to Run
-	1.	Install dependencies:
+### Smarter Alarm Logic
 
+The alarm-checking loop runs in a **background thread**, keeping the GUI responsive while waiting for alarms.  
+Each alarm is managed individually and can repeat daily if desired.
+
+### User Interface Components
+
+- Treeview table displaying all alarms  
+- Edit, Delete, and Toggle buttons for control  
+- Status label for instant feedback  
+- Pop-up notifications when alarms ring  
+
+---
+
+## 🧠 Learning Focus
+
+Through this project, I practiced:
+
+- Event-driven programming  
+- Thread management in GUI applications  
+- File handling and JSON serialization  
+- Responsive interface design  
+
+---
+
+## 🧰 Technical Stack
+
+| Component | Technology |
+|------------|-------------|
+| **Language** | Python 3.11 |
+| **GUI Library** | Tkinter + ttk |
+| **Sound** | `pygame` + macOS fallback (`afplay` / `say`) |
+| **Storage** | JSON |
+| **Threading** | Python `threading` module |
+| **IDE** | Visual Studio Code |
+| **OS** | macOS |
+
+---
+
+## 🖥 How to Run
+
+### 1. Install Dependencies
+```bash
 pip install pygame
+```
 
-
-	2.	Run the program:
-
+### 2. Run the Program
+```bash
 python3 gui_alarm_clock.py
+```
 
+### 3. Add Alarms
+- Enter a time (`HH:MM`)  
+- Add a label (optional)  
+- Check “Repeat daily” if needed  
+- Click **Add Alarm**
 
-	3.	Add alarms:
-	•	Enter a time (HH:MM)
-	•	Add a label (optional)
-	•	Check “Repeat daily” if needed
-	•	Click Add Alarm
-	4.	Manage alarms:
-	•	Select any alarm and click Edit, Delete, or Toggle Enable
-	5.	Use custom alarm sound:
-	•	Set SOUND_FILE path to "alarm.wav" instead of None
+### 4. Manage Alarms
+- Select any alarm and click **Edit**, **Delete**, or **Toggle Enable**
 
-Project Structure
+### 5. Use a Custom Alarm Sound
+Set the `SOUND_FILE` path to `"alarm.wav"` instead of `None`.
 
+---
+
+## 📂 Project Structure
+
+```
 alarm-clock/
 │
 ├── gui_alarm_clock.py   # Main program file
 ├── alarms.json          # Auto-saved alarm data
 ├── README.md            # Project documentation
 └── alarm.wav (optional) # Custom alarm sound
+```
 
-Possible Future Enhancements
-	•	Add Snooze (5 or 10 minutes) button when an alarm rings
-	•	Optional dark mode
-	•	Custom sound selection
-	•	Work on the responsive side of the app
+---
 
+## 🌱 Possible Future Enhancements
+
+- Add a **Snooze** button (5 or 10 minutes) when an alarm rings  
+- Implement **dark mode**  
+- Allow **custom sound selection** from the file system  
+- Improve **UI responsiveness and animations**  
+
+---
+# Capstone Project — Alarm Clock
+
+## 📘 Overview
+
+This project began as a simple **Alarm Clock** concept proposed for my **NCLab Python Capstone**.  
+The original goal was to build a basic time-based alarm program that could play a sound at a set time — something minimal, easy to code, and functional for beginners.
+
+Over time, I enhanced the idea and turned it into a **full-featured, responsive desktop alarm clock application** that feels like a real, usable tool.
+
+---
+
+## 🎯 Original Goals
+
+From my project proposal, my initial objectives were:
+
+1. **Build a basic Alarm Clock program** that allows the user to:
+   - Set a specific time for an alarm  
+   - Trigger a simple alert or sound when that time arrives  
+
+2. **Practice key Python concepts:**
+   - Loops and conditionals  
+   - Time-based functions (`time` module)  
+   - User input and output  
+   - Simple functions and modular design  
+
+3. **Use beginner-friendly tools only:**
+   - **IDE:** Visual Studio Code  
+   - **OS:** macOS  
+   - **No external frameworks** except possibly `winsound` or `pygame` for sound  
+
+4. **Add a flowchart** showing how the program waits for the right time and plays a sound.
+
+---
+
+## 🚀 What I Actually Built
+
+During development, the project evolved into a complete **Graphical User Interface (GUI)** application with multiple features that go far beyond the initial concept.
+
+### Final Version Highlights
+
+- **Graphical (GUI):** Built with Tkinter  
+- **Cross-platform:** Fully functional on macOS  
+- **Multi-alarm capable:** Add, edit, delete, and toggle multiple alarms  
+- **Persistent:** Alarms are automatically saved in `alarms.json`  
+- **Responsive:** Layout dynamically adjusts to window resizing  
+- **Customizable:** Supports custom sound files via `pygame` or macOS system sounds  
+
+---
+
+## 🧩 Design Choices and Improvements
+
+### Responsive Layout
+
+Rather than stacking all widgets vertically, I redesigned the interface using **Tkinter’s grid system**.  
+Each component (header, input form, alarm list, footer) expands fluidly when the window is resized.
+
+### Persistent Storage
+
+I added a simple `alarms.json` file that automatically saves and loads alarm data.  
+This persistence ensures users don’t lose their alarms after closing the app.
+
+### Cross-Platform Sound System
+
+Originally, I planned to use `winsound`, but since I developed on macOS, I implemented a **dual sound system**:
+- `pygame` for custom `.wav` and `.mp3` files  
+- macOS fallback using system sounds via `afplay` or text-to-speech via `say`
+
+### Smarter Alarm Logic
+
+The alarm-checking loop runs in a **background thread**, keeping the GUI responsive while waiting for alarms.  
+Each alarm is managed individually and can repeat daily if desired.
+
+### User Interface Components
+
+- Treeview table displaying all alarms  
+- Edit, Delete, and Toggle buttons for control  
+- Status label for instant feedback  
+- Pop-up notifications when alarms ring  
+
+---
+
+## 🧠 Learning Focus
+
+Through this project, I practiced:
+
+- Event-driven programming  
+- Thread management in GUI applications  
+- File handling and JSON serialization  
+- Responsive interface design  
+
+---
+
+## 🧰 Technical Stack
+
+| Component | Technology |
+|------------|-------------|
+| **Language** | Python 3.11 |
+| **GUI Library** | Tkinter + ttk |
+| **Sound** | `pygame` + macOS fallback (`afplay` / `say`) |
+| **Storage** | JSON |
+| **Threading** | Python `threading` module |
+| **IDE** | Visual Studio Code |
+| **OS** | macOS |
+
+---
+
+## 🖥 How to Run
+
+### 1. Install Dependencies
+```bash
+pip install pygame
+```
+
+### 2. Run the Program
+```bash
+python3 gui_alarm_clock.py
+```
+
+### 3. Add Alarms
+- Enter a time (`HH:MM`)  
+- Add a label (optional)  
+- Check “Repeat daily” if needed  
+- Click **Add Alarm**
+
+### 4. Manage Alarms
+- Select any alarm and click **Edit**, **Delete**, or **Toggle Enable**
+
+### 5. Use a Custom Alarm Sound
+Set the `SOUND_FILE` path to `"alarm.wav"` instead of `None`.
+
+---
+
+## 📂 Project Structure
+
+```
+alarm-clock/
+│
+├── gui_alarm_clock.py   # Main program file
+├── alarms.json          # Auto-saved alarm data
+├── README.md            # Project documentation
+└── alarm.wav (optional) # Custom alarm sound
+```
+
+---
+
+## 🌱 Possible Future Enhancements
+
+- Add a **Snooze** button (5 or 10 minutes) when an alarm rings  
+- Implement **dark mode**  
+- Allow **custom sound selection** from the file system  
+- Improve **UI responsiveness and animations**  
+
+---
 Reflection
 
 Before learning Python, my background was primarily in web development and graphic design.
