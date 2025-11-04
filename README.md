@@ -43,6 +43,8 @@ During development, the project evolved into a complete **Graphical User Interfa
 - **Multi-alarm capable:** Add, edit, delete, and toggle multiple alarms  
 - **Persistent:** Alarms are automatically saved in `alarms.json`  
 - **Responsive:** Layout dynamically adjusts to window resizing  
+- **Dark Mode Support** (optional) 
+- **Pop-up Alerts:** User-friendly reminders 
 - **Customizable:** Supports custom sound files via `pygame` or macOS system sounds  
 
 ---
