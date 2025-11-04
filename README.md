@@ -150,7 +150,6 @@ alarm-clock/
 ## 🌱 Possible Future Enhancements
 
 - Add a **Snooze** button (5 or 10 minutes) when an alarm rings  
-- Implement **dark mode**  
 - Allow **custom sound selection** from the file system  
 - Improve **UI responsiveness and animations**  
 
