@@ -78,6 +78,8 @@ Each alarm is managed individually and can repeat daily if desired.
 - Edit, Delete, and Toggle buttons for control  
 - Status label for instant feedback  
 - Pop-up notifications when alarms ring  
+- Turn ON/OFF dark mode 
+
 
 ---
 
